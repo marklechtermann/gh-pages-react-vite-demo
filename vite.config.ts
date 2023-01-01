@@ -5,6 +5,6 @@ dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: `${process.env.PUBLIC_URL}`,
+  base: `${process.env.PUBLIC_URL || ""}`,
   plugins: [react()],
 });
